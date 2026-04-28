@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("Location: crud.php");
             exit();
         } else {
-            $loginErr = "Incorrect username or password.";
+            $loginErr = "Incorrect username or password";
         }
         mysqli_stmt_close($stmt);
     }
